@@ -1,5 +1,5 @@
  Exercicios da disciplina de Estrutura de Dados - IFSP ARARAQUARA
-** Prof Gislaine C. M. Rosales**
+**Prof Gislaine C. M. Rosales**
 1. Crie um Tipo Abstrato de Dados (TAD) que represente os números racionais e que contenha as seguintes funções: (a) Cria racional; (b) Soma racionais; (c) Multiplica racionais; (d) Testa se são iguais; 
 
  2. Sabe-se que um número complexo é escrito da forma sendo x a sua parte real e y a parte imaginária, ambas representadas por valores reais. Crie um Tipo Abstrato de Dados (TAD) que represente os números complexos com as seguintes funções: (a) criar um número complexo (b) destruir um número complexo (c) soma de dois números complexos; (d) subtração de dois números complexos; (e) mutiplicação de dois números complexos; (f) divisão de dois números complexos. 
