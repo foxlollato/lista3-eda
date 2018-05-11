@@ -15,9 +15,15 @@ int main(int argc, char *argv[]){
 	push(p, 8, 2);
 	push(p, 9, 2);
 	push(p, 10, 2);
+	
+	imprimePilha(p);
 
+	printf("\nPUSH? %d", push(p, 100, 1));
+	printf("\nPUSH? %d", push(p, 200, 2));
+	
 	imprimePilha(p);
 	
+	pop(p,1);
 	pop(p,1);
 	pop(p,1);
 	pop(p,1);
@@ -27,9 +33,17 @@ int main(int argc, char *argv[]){
 	
 	pop(p, 2);
 	pop(p, 2);
+	pop(p, 2);
+	pop(p, 2);
+	pop(p, 2);
+
+	imprimePilha(p);
+
+	printf("\nPOP? %d", pop(p,1));
+	printf("\nPOP? %d", pop(p,2));
 
 	imprimePilha(p);
 	
-	
+	printf("\n");	
 	return 0;
 }

@@ -23,14 +23,18 @@ Pilha* criaPilha(int size){
 
 int push(Pilha *pilha, int dado, int op){
 	int retorno = 0;
-	if(pilha!=NULL && pilha->topo1 != pilha->topo2+1 && op >=1 && op <=2){
+	if(pilha!=NULL && pilha->topo1+1 != pilha->topo2 && op >=1 && op <=2){
 		if(op==1){
 			pilha->dados[pilha->topo1+1] = dado;
-			pilha->topo1++;
+			if(pilha->topo1 != pilha->topo2-1){
+				pilha->topo1++;
+			}
 			retorno = 1;
 		}else{
 			pilha->dados[pilha->topo2-1] = dado;
-			pilha->topo2--;
+			if(pilha->topo2 != pilha->topo1+1){
+				pilha->topo2--;
+			}
 			retorno = 1;
 		}
 	}
@@ -56,15 +60,15 @@ int pop(Pilha *pilha, int op){
 
 void imprimePilha(Pilha *pilha){
 	if(pilha!=NULL){
-	printf("\n<------------->");
+	printf("\n<========================>");
 		int i =0;
 		while(i != pilha->size){
-			printf("\nElemento: %d: ", pilha->dados[i]);
+			printf("\n||\tElemento: %d\t||", pilha->dados[i]);
 			i++;	
 		}
 	}	
-	printf("\n-------------");
-	printf("\nTopo 1: %d", pilha->topo1);
-	printf("\nTopo 2: %d", pilha->topo2);
-	printf("\n<------------->");
+	printf("\n||----------------------||");
+	printf("\n||Topo 1: %d\t\t||", pilha->topo1);
+	printf("\n||Topo 2: %d\t\t||", pilha->topo2);
+	printf("\n<========================>");
 }
