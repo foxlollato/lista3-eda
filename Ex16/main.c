@@ -17,7 +17,7 @@ void inverterString(char *string){
 	char *normal=string;//guardando referencia para string
 	char *inicio; //referencia inicio de cada palavra
 	char *fim;//referencia fim de cada palavra
-	char *inv=(char*)malloc(sizeof(strlen(string)+1));//allocando espaco para string invertida
+	char *inv=(char*)malloc((sizeof(char)*(strlen(string)))+1);//allocando espaco para string invertida
 	char *invAux=inv;//referencia posicoes da nova string
 
 	while(*string != '.'){
@@ -41,4 +41,3 @@ void inverterString(char *string){
 	printf("Normal: %s", normal);
 	printf("\nInvert: %s", inv);
 }
-
