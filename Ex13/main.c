@@ -17,17 +17,17 @@ int main(int argc, char *argv[]){
 	int i = 0;		
 	while(i<10){
 		entra(fila,dados[i]);
-		i++;
 		imprimeFila(fila);
 		printf("\n");		
+		i++;
 	}
 	printf("A Fila esta vazia? %s\n", (vazia(fila) ? "SIM" : "NAO"));
 	i=0;
 	while(i<10){
-		i++;
 		imprimeFila(fila);
 		sai(fila);
 		printf("\n");		
+		i++;
 	}
 	printf("A Fila esta vazia? %s\n", (vazia(fila) ? "SIM" : "NAO"));
 	
