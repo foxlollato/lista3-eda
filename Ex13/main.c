@@ -21,6 +21,7 @@ int main(int argc, char *argv[]){
 		imprimeFila(fila);
 		printf("\n");		
 	}
+	printf("A Fila esta vazia? %s\n", (vazia(fila) ? "SIM" : "NAO"));
 	i=0;
 	while(i<10){
 		i++;
@@ -28,7 +29,8 @@ int main(int argc, char *argv[]){
 		sai(fila);
 		printf("\n");		
 	}
-	imprimeFila(fila);
+	printf("A Fila esta vazia? %s\n", (vazia(fila) ? "SIM" : "NAO"));
+	
 	free(fila);
 	return 0;
 }
