@@ -5,6 +5,5 @@ int main(int argc, char *argv[]){
 
 	printf("\nResultado %.2f\n", calc(lista));
 
-
 	return 0;
 }
