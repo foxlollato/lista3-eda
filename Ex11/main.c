@@ -1,6 +1,4 @@
 #include "tad.h" 
-
-
 int main(int argc, char *argv[]){
 	
 	Pilha *p=criaPilha(10);
